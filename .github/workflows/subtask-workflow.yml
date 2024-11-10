@@ -1,11 +1,9 @@
 name: Subtask Workflow
 
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - main
-    paths:
-      - 'subtask/**'
 
 jobs:
   build-and-deploy:
