@@ -19,7 +19,6 @@ class Keyboard(models.Model):
         ('digital_piano', 'Digital Piano'),
         ('arranger', 'Arranjador'),
         ('controller', 'Controlador MIDI')
-
     ])
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
