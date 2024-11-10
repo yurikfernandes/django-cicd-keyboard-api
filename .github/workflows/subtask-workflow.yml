@@ -28,15 +28,3 @@ jobs:
       - name: Run tests
         run: |
           pytest
-
-    #   - name: Deploy to production
-    #     uses: appleboy/ssh-action@v1
-    #     with:
-    #       host: ${{ secrets.HOST }}
-    #       username: ${{ secrets.USERNAME }}
-    #       password: ${{ secrets.PASSWORD }}
-    #       script: |
-    #         cd /path/to/production/environment
-    #         git pull origin master
-    #         python manage.py collectstatic --no-input
-    #         python manage.py migrate

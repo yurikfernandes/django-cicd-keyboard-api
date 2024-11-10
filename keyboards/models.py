@@ -55,4 +55,4 @@ class KeyboardEvaluation(models.Model):
     overall_rating = models.DecimalField(max_digits=3, decimal_places=2, null=True, blank=True)
 
     def __str__(self):
-        return f"{self.keyboard.name} Evaluation"
+        return f"{self.keyboard.name} Evaluation - Ratintg: {self.overall_rating}"
