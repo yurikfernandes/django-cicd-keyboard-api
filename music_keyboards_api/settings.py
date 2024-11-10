@@ -22,7 +22,7 @@ print(BASE_DIR)
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = DJANGO_SECRET
+SECRET_KEY = 'django-insecure-tv!r3dxz_3t^mm4z8(1x9$+cd=^gbfp)xfz6)x#wewlv8gyy80'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
