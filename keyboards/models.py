@@ -25,7 +25,7 @@ class Keyboard(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.name} - {self.category}"
+        return f"{self.name} | {self.category}"
     
 
 class KeyboardFeature(models.Model):
