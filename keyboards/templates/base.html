@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>Teclados</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="{% url 'homepage' %}">Home</a>
+      <!-- <a href="{% url 'keyboard_list' %}">Teclados</a> -->
+    </nav>
+    <div class="content">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+</body>
+
+</html>

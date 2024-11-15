@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="homepage">
+
+    {% for keyboard in keyboards %}
+    <div class="homepage-item">
+      <p>Name: {{ keyboard.name }}</p>
+      <p>Categorias: {{ keyboard.categories }}</p>
+      <p>Rating: {{ keyboard.overall_rating|floatformat:2 }}</p>
+      <p>Descrição: {{ keyboard.description }}</p>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}
